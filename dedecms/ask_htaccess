@@ -1,0 +1,15 @@
+RewriteEngine On
+RewriteRule ^/ask/index.html$ /ask/index.php
+RewriteRule ^/ask/([0-9]+).html$ /ask/index.php?ct=question&askaid=$1
+RewriteRule ^/ask/([0-9]+)$ /ask/index.php?ct=browser&tid=$1
+RewriteRule ^/ask/([0-9]+).html$ /ask/index.php?ct=browser&tid2=$1
+RewriteRule ^/ask/([0-9]+)$ /ask/index.php?ct=browser&lm=$1
+RewriteRule ^/ask/type$ /ask/index.php?ct=type
+RewriteRule ^/ask/tid([0-9]+)lm([0-9]+)$ /ask/index.php?ct=browser&tid=$1&lm=$2
+RewriteRule ^/ask/vtid([0-9]+)$ /ask/index.php?ct=browser&tid=$1
+RewriteRule ^/ask/tidt([0-9]+)lm([0-9]+)$ /ask/index.php?ct=browser&tid2=$1&lm=$2
+RewriteRule ^/ask/tidt([0-9]+)$ /ask/index.php?ct=browser&tid2=$1
+RewriteRule ^/ask/askaid([0-9]+)$ /ask/index.php?ct=question&ac=edit&askaid=$1
+RewriteRule ^/ask/myask$ /ask/index.php?ct=myask
+RewriteRule ^/ask/answer$ /ask/index.php?ct=myask&ac=answer3
+
